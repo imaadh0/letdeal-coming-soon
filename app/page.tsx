@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-[#3c0196] px-4 pt-20 pb-12 text-white transition-colors duration-500 sm:px-6 sm:pt-24 lg:px-8 xl:justify-start xl:pt-0">
+    <main className="relative flex min-h-screen flex-col items-center justify-start overflow-hidden bg-[#230064] px-4 pt-20 pb-12 text-white transition-colors duration-500 sm:px-6 sm:pt-24 lg:px-8 xl:justify-start xl:pt-0">
       {/* Subtle Background Glows */}
       <div className="absolute top-[-15%] left-[-15%] h-[60%] w-[60%] rounded-full bg-[#4c02c0] opacity-10 blur-[130px] sm:top-[-10%] sm:left-[-10%]" />
       <div className="absolute bottom-[-15%] right-[-15%] h-[60%] w-[60%] rounded-full bg-[#2a0166] opacity-20 blur-[130px] sm:bottom-[-10%] sm:right-[-10%]" />
