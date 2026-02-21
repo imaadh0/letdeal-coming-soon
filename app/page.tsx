@@ -35,7 +35,7 @@ export default function Home() {
           {/* Large Primary Text - Bold and Clear */}
           <motion.h1
             initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 0.8, scale: 1 }}
+            animate={{ opacity: 0.5, scale: 1 }}
             transition={{ duration: 1.5, delay: 0.2 }}
             className="font-serif pointer-events-none whitespace-nowrap select-none text-[clamp(1.5rem,11vw,10rem)] font-normal tracking-[0.1em] uppercase sm:tracking-[0.2em]"
           >
@@ -57,15 +57,7 @@ export default function Home() {
         </motion.div>
       </div>
 
-      {/* Footer Decoration */}
-      <motion.footer
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ duration: 1, delay: 2.2 }}
-        className="absolute bottom-6 z-30 text-[11px] font-medium tracking-[0.3em] uppercase text-black sm:bottom-10 sm:text-[13px] sm:tracking-[0.4em] lg:text-[16px] xl:text-[18px]"
-      >
-        <span>Something exciting is brewing</span>
-      </motion.footer>
+
 
       {/* Car Hero Section */}
       <motion.div
@@ -74,12 +66,12 @@ export default function Home() {
         transition={{ duration: 1.5, delay: 1, ease: "easeOut" }}
         className="absolute bottom-0 left-0 z-0 h-[45vh] w-full min-h-[300px] overflow-hidden sm:h-[50vh] lg:-bottom-24 lg:h-[55vh] xl:-bottom-28 xl:h-[68vh]"
       >
-        <div className="relative h-full w-full">
+        <div className="relative h-full w-full" style={{ maskImage: "linear-gradient(to bottom, transparent 0%, black 30%)", WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 30%)" }}>
           <Image
             src="/cars-hero.jpg"
             alt="Premium Vehicles"
             fill
-            className="object-cover object-bottom"
+            className="object-cover object-bottom lg:object-center"
             priority
           />
           {/* Seamless Blend Overlay - Hides Sky and Blends to Background */}
