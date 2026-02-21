@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond, Alex_Brush } from "next/font/google";
+import { Inter, Italiana, Pinyon_Script } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,13 +7,13 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const cormorant = Cormorant_Garamond({
+const italiana = Italiana({
   variable: "--font-serif",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400"],
 });
 
-const alexBrush = Alex_Brush({
+const pinyonScript = Pinyon_Script({
   variable: "--font-script",
   subsets: ["latin"],
   weight: ["400"],
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${cormorant.variable} ${alexBrush.variable} antialiased`}
+        className={`${inter.variable} ${italiana.variable} ${pinyonScript.variable} antialiased`}
       >
         {children}
       </body>
