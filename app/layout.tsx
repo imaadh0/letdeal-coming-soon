@@ -20,7 +20,7 @@ const pinyonScript = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "LetsDeal | Coming Soon",
+  title: "Fix Deal | Coming Soon",
   description: "The easiest way to trade assets online.",
 };
 

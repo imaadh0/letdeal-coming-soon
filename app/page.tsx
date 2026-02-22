@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen w-full bg-black">
+    <main className="relative h-[100dvh] w-full bg-black overflow-hidden">
       {/* Blurred Background Image - Mobile */}
       <div className="absolute inset-0 sm:hidden">
         <Image
